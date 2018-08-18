@@ -15,6 +15,10 @@ class CreatetablaTest extends Migration
     {
         Schema::create('test', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('numero');
+            $table->boolean('boolean');
+            $table->date('fecha');
+            $table->text('texto');
             $table->timestamps();
         });
     }
